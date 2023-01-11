@@ -35,7 +35,7 @@ public class CS20SVotingAgeExample001{
         banner = "*****************************" + nl;
         banner += "Name:        Sveinson" + nl;
         banner += "Class:       CS20S" + nl;
-        banner += "Assignment:  AxQy" + nl;
+        banner += "Assignment:  Voting Age: Selection Example 1" + nl;
         banner += "******************************";
 
         // now print the banner to the terminal window
@@ -53,9 +53,11 @@ public class CS20SVotingAgeExample001{
         // use an if else to set the message
         if(age >= 18){
             message = "old enough";
+            //System.out.println("Your are " + message + " to vote.");
         }// end if
         else{
             message = "not old enough";
+            //System.out.println("Your are " + message + " to vote.");
         }// end else
 
         // print result
