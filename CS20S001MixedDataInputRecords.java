@@ -70,7 +70,7 @@ public class CS20S001MixedDataInputRecords {
         // step one: split the input string into tokens
         tokens = strin.split(delim);
         
-        // changed "e newman 34 23.23"
+        // changed "e,newman 34 ,23.23"
         // into "e" "newman" "34" "23.23"
         
         // step two: parse each token into its appropriate variable
