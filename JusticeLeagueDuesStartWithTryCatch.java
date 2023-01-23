@@ -10,7 +10,7 @@
  import javax.swing.*;
  import java.text.NumberFormat;
  
- public class JusticeLeagueDuesStart{
+ public class JusticeLeagueDuesStartWithTryCatch{
      public static void main(String[] args){
          // ******* declare constants *******
          
@@ -75,9 +75,17 @@
          // parse input into variable
          
          // use a try catch block to catch runtime exceptions
+         try{
              name = tokens[0];                      // name is a string so no parsing is needed
              age = Integer.parseInt(tokens[1]);     // "15" must converted to 15 (String to int)
              months = Integer.parseInt(tokens[2]);  // "23" must converted to 23 (String to int) 
+            }// end try
+            catch(NumberFormatException e){
+                System.out.println("all numbers must be int");
+            }// end number format error
+            catch(ArrayIndexOutOfBoundsException e){
+                System.out.println("you must enter all 3 data items.");
+            }// end incorrct number of inputs error
             
          // test input and parsing
          /*System.out.println("name: " + name);
@@ -88,12 +96,12 @@
          // ******* processing *******
          
          if(age < AGETHRESHOLD){
-           System.out.println("junior");
-           //dues = JUNIORFEE * months;
+           //System.out.println("junior");
+           dues = JUNIORFEE * months;
          } // end if < 18
          else{
-           System.out.println("adult");
-           //dues = ADULTFEE * months;
+           //System.out.println("adult");
+           dues = ADULTFEE * months;
          } // end  18 and over
          
          //System.out.println(dues);
