@@ -10,6 +10,7 @@
 import java.util.Scanner;
 import javax.swing.*;
 import java.text.NumberFormat;
+import java.awt.Font;
 
 public class JusticeLeagueDues{
     public static void main(String[] args){
@@ -116,6 +117,8 @@ public class JusticeLeagueDues{
         strout = String.format("%-10s %10s %10s %10s %s", "Name", "Age", "Months", "Dues", nl);
         strout += String.format("%-10s %10d %10d %10s %s", name, age, months, (cf.format(dues)), nl);
 
+        // set the font for the pop-up
+        UIManager.put("OptionPane.messageFont", new Font("Courier",Font.PLAIN, 12));
         JOptionPane.showMessageDialog(null, banner + strout);
 
         // ******* closing message *******
