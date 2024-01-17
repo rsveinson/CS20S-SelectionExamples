@@ -87,7 +87,7 @@ public class usticeLeagueDuesNestedIfAndDependencies{
 
         /* the record is read in as a string so now
          * we have
-         * "bob 15 23"  one string containing all of the input
+         * "bob 15 23 e f"  one string containing all of the input
          */
 
         // split and parse input string
